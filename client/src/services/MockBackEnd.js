@@ -6,17 +6,20 @@ class MockBackEnd
 {
 	constructor()
 	{
-		
+
 	}
 	getRandomNumbers()
 	{
 		return this.later([12,33,45,2,3,11,56,66]);
 	}
-	later(value) 
+	writeNumbersToSheet(data) {
+		return true; // do nothing on mocked backend
+	}
+	later(value)
 	{
-		return new Promise(function(resolve) 
+		return new Promise(function(resolve)
 		{
-			setTimeout(function() 
+			setTimeout(function()
 			{
 			    resolve(value);
 			}, 500);

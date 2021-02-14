@@ -20,7 +20,12 @@ class BackEndWrapper
 	{
 		return this.real.getRandomNumbers();
 	}
-	
+
+	writeNumbersToSheet(data)
+	{
+		return this.real.writeNumbersToSheet(data);
+	}
+
 };
 
 export default BackEndWrapper;

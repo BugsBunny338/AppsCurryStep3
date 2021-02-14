@@ -1,4 +1,4 @@
-function doGet() 
+function doGet()
 {
 	return HtmlService
       .createTemplateFromFile('index')
@@ -9,4 +9,10 @@ function doGet()
 function getRandomNumbers()
 {
 	return AppLib.getRandomNumbers();
+}
+
+
+function writeNumbersToSheet(data)
+{
+	return AppLib.writeNumbersToSheet(data);
 }
